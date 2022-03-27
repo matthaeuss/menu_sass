@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "sass -w ./src/sass/main.scss ./src/css/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matthaeuss/menu_sass.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "mattt.przybylski@gmail.com",
+  "license": "Beerware",
   "bugs": {
     "url": "https://github.com/matthaeuss/menu_sass/issues"
   },
-  "homepage": "https://github.com/matthaeuss/menu_sass#readme"
+  "homepage": "https://github.com/matthaeuss/menu_sass#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
 }

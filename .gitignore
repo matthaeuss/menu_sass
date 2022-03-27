@@ -1,4 +1,6 @@
-.vsc
+.vscode
 .idea
 
 node_modules
+
+src/css/*
