@@ -1,0 +1,31 @@
+@import "../variables";
+@import "../utils/mixins";
+
+html, body {
+    font-size: #{$base-font-size}px;
+    @include mq(lg) {
+       font-size: #{$base-font-size * 0.5}px;
+    }
+}
+
+@each $font-name, $file-name in $fonts {
+    @font-face {
+       @include font-face($font-name, #{$font-path}#{$file-name});
+    }
+}
+
+// @font-face {
+//     font-family: 'robotobold';
+//     src: url('roboto-bold-webfont.woff2') format('woff2'),
+//          url('roboto-bold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotothin';
+//     src: url('roboto-thin-webfont.woff2') format('woff2'),
+//          url('roboto-thin-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
